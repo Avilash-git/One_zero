@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <h2>Welcome, {{ user }}</h2>
+    <a href="/input">Create Timetable</a> |
+    <a href="/timetable">View Timetable</a> | <a href="/logout">Logout</a>
+  </body>
+</html>

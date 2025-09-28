@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Timetable Input</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+  <body>
+    <h2>Enter Timetable Details</h2>
+    <form method="POST" action="/input">
+      <label>College Name:</label
+      ><input type="text" name="college" required /><br />
+      <label>Number of Subjects:</label
+      ><input type="number" name="subjects" required /><br />
+      <label>Rooms:</label><input type="number" name="rooms" required /><br />
+      <label>Faculty:</label
+      ><input type="number" name="faculty" required /><br />
+      <label>Hours per Day:</label
+      ><input type="number" name="hours" required /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
